@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-	<title>�X�g�b�v�E�H�b�`�A�v��</title>
+	<title>ストップウォッチアプリ</title>
 	<style>
 		body {
 			text-align: center;
@@ -26,11 +26,11 @@
 	</style>
 </head>
 <body>
-	<h1>�X�g�b�v�E�H�b�`�A�v��</h1>
-	<h2>5�b�}0.3�b�Ŏ~�߂Ă��������I</h2>
+	<h1>ストップウォッチアプリ</h1>
+	<h2>5秒±0.3秒で止めてください！</h2>
 	<div id="timer">0.000</div>
-	<div id="success">0�񐬌����܂����I</div>
-	<div id="loser" style="display:none;">�l���̔s��</div>
+	<div id="success">0回成功しました！</div>
+	<div id="loser" style="display:none;">人生の敗者</div>
 	<script>
 		let startTime = 0;
 		let timerIntervalId = null;
@@ -46,7 +46,7 @@
 			const elapsedTime = Date.now() - startTime;
 			if (elapsedTime >= 4700 && elapsedTime <= 5300) {
 				successCount++;
-				document.getElementById("success").textContent = successCount + "�񐬌����܂����I";
+				document.getElementById("success").textContent = successCount + "回成功しました！";
 			} else {
 				document.getElementById("loser").style.display = "block";
 				setTimeout(reset, 2000);
@@ -64,7 +64,7 @@
 			startTime = 0;
 			successCount = 0;
 			document.getElementById("timer").textContent = "0.000";
-			document.getElementById("success").textContent = "0�񐬌����܂����I";
+			document.getElementById("success").textContent = "0回成功しました！";
 			document.getElementById("loser").style.display = "none";
 		}
 

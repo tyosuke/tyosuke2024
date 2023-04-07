@@ -1,19 +1,19 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html>
 <head>
-	<title>‚¨‚İ‚­‚¶ƒAƒvƒŠ</title>
+	<title>ãŠã¿ãã˜ã‚¢ãƒ—ãƒª</title>
 </head>
 <body>
-	<h1>‚¨‚İ‚­‚¶ƒAƒvƒŠ</h1>
-	<p>‚ ‚È‚½‚Ì¡“ú‚Ì‰^¨‚ğè‚¢‚Ü‚·</p>
-	<button onclick="omikuji()">è‚¤I</button>
+	<h1>ãŠã¿ãã˜ã‚¢ãƒ—ãƒª</h1>
+	<p>ã‚ãªãŸã®ä»Šæ—¥ã®é‹å‹¢ã‚’å ã„ã¾ã™</p>
+	<button onclick="omikuji()">å ã†ï¼</button>
 	<p id="fortune"></p>
 	<p id="rating"></p>
 
 	<script type="text/javascript">
 		function omikuji(){
-			var fortuneList = ["‘å‹g", "‹g", "’†‹g", "¬‹g", "––‹g", "‹¥", "‘å‹¥"];
-			var ratingList = ["‹à‰^", "—öˆ¤‰^", "d–‰^", "‘S‘Ì‰^", "chatGPT‰^"];
+			var fortuneList = ["å¤§å‰", "å‰", "ä¸­å‰", "å°å‰", "æœ«å‰", "å‡¶", "å¤§å‡¶"];
+			var ratingList = ["é‡‘é‹", "æ‹æ„›é‹", "ä»•äº‹é‹", "å…¨ä½“é‹", "chatGPTé‹"];
 
 			var fortuneIndex = Math.floor(Math.random() * fortuneList.length);
 			var ratingIndex = Math.floor(Math.random() * ratingList.length);
@@ -22,20 +22,20 @@
 			var fortune = fortuneList[fortuneIndex];
 			var rating = ratingList[ratingIndex];
 
-			document.getElementById("fortune").innerHTML = "¡“ú‚Ì‰^¨‚Íy" + fortune + "z‚Å‚·B";
-			document.getElementById("rating").innerHTML = "¡“ú‚Ì" + rating + "‚Ì•]‰¿‚Íy" + ratingValue + "z" + generateRating(ratingValue) + "‚Å‚·B";
+			document.getElementById("fortune").innerHTML = "ä»Šæ—¥ã®é‹å‹¢ã¯ã€" + fortune + "ã€‘ã§ã™ã€‚";
+			document.getElementById("rating").innerHTML = "ä»Šæ—¥ã®" + rating + "ã®è©•ä¾¡ã¯ã€" + ratingValue + "ã€‘" + generateRating(ratingValue) + "ã§ã™ã€‚";
 		}
 
 		function generateRating(value){
 			var ratingString = "";
 			if(value < 5){
 				for(var i = 0; i < value; i++){
-					ratingString += "š";
+					ratingString += "â˜…";
 				}
 			}
 			else{
 				for(var i = 0; i < value; i++){
-					ratingString += "šš";
+					ratingString += "â˜…â˜…";
 				}
 			}
 			return ratingString;
