@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>得票数から獲得議席の半円グラフを表示するアプリ</title>
+  </head>
+  <body>
+    <div>
+      <h1>得票数から獲得議席の半円グラフを表示するアプリ</h1>
+      <p>選挙制度を選択してください：</p>
+      <select id="election-type">
+        <option value="sntv">単記非移譲式代表制</option>
+        <option value="mm">小選挙区比例代表並立制</option>
+        <option value="dmp">小選挙区二票制</option>
+      </select>
+      <p>総得票数：</p>
+      <input type="number" id="total-votes" />
+      <p>候補者名と得票数を記入してください（複数の候補者がいる場合は改行して入力）：</p>
+      <textarea id="candidate-votes"></textarea>
+      <button onclick="createPieChart()">描画</button>
+      <div id="pie-chart"></div>
+      <p id="joke">選挙はダジャレの世界だ。一票獲得するためには野党りの口を叩くことも必要だ。</p>
+    </div>
+    <script>
+      function createPieChart() {
+        const type = document.getElementById("election-type").value;
+        const totalVotes = parseInt(document.getElementById("total-votes").value);
+        const candidateVotes = document.getElementById("candidate-votes").value.split("\n");
+
+        let voteSum = 0;
+        let seatSum = 0;
+
+        candidateVotes.forEach((value) => {
+          const voteArr = value.split(" ");
+          const candidate = voteArr[0];
+          const vote = parseInt(voteArr[1]);
+
+          voteSum += vote;
+
+          if (type === "sntv") {
+            seatSum += Math.floor(vote / (totalVotes / 2));
+          } else if (type === "mm") {
+            seatSum += Math.round(vote / totalVotes);
+          } else if (type === "dmp") {
+            if (vote >= totalVotes / 2) {
+              seatSum += 2;
+            } else {
+              seatSum += 1;
+            }
+          }
+        });
+
+        const remainingSeats = parseInt((totalVotes / 2 - voteSum) / (totalVotes / 2 - seatSum));
+
+        let chartHtml = '<svg viewBox="-1 -1 2 2">';
+        let angleSum = 0;
+
+        candidateVotes.forEach((value) => {
+          const voteArr = value.split(" ");
+          const candidate = voteArr[0];
+          const vote = parseInt(voteArr[1]);
+
+          const angle = (vote / totalVotes) * 180;
+
+          chartHtml += `<path d="M 0 0 L ${Math.cos((angleSum * Math.PI) / 180)} ${Math.sin(
+            (angleSum * Math.PI) / 180
+          )} A 1 1 0 ${angle > 180 ? 1 : 0} 1 ${Math.cos(
+            ((angleSum + angle) * Math.PI) / 180
+          )} ${Math.sin(((angleSum + angle) * Math.PI) / 180)} Z" fill="#${Math.floor(
+            Math.random() * 16777216
+          ).toString(16)}" />`;
+
+          angleSum += angle;
+        });
+
+        if (remainingSeats > 0) {
+          const angle = (remainingSeats / totalVotes) * 180;
+
+          chartHtml += `<path d="M 0 0 L ${Math.cos((angleSum * Math.PI) / 180)} ${Math.sin(
+            (angleSum * Math.PI) / 180
+          )} A 1 1 0 ${angle > 180 ? 1 : 0} 1 ${Math.cos(
+            ((angleSum + angle) * Math.PI) / 180
+          )} ${Math.sin(((angleSum + angle) * Math.PI) / 180)} Z" fill="#${Math.floor(
+            Math.random() * 16777216
+          ).toString(16)}" />`;
+        }
+
+        chartHtml += "</svg>";
+
+        const chartElement = document.getElementById("pie-chart");
+        chartElement.innerHTML = chartHtml;
+      }
+    </script>
+  </body>
+</html>

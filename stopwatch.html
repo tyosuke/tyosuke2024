@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ストップウォッチアプリ</title>
+	<style>
+		body {
+			text-align: center;
+		}
+		h1 {
+			font-size: 48px;
+		}
+		h2 {
+			font-size: 36px;
+		}
+		#timer {
+			font-size: 96px;
+			margin: 32px;
+		}
+		#success {
+			font-size: 24px;
+			margin-top: 16px;
+		}
+		#loser {
+			font-size: 72px;
+		}
+	</style>
+</head>
+<body>
+	<h1>ストップウォッチアプリ</h1>
+	<h2>5秒±0.3秒で止めてください！</h2>
+	<div id="timer">0.000</div>
+	<div id="success">0回成功しました！</div>
+	<div id="loser" style="display:none;">人生の敗者</div>
+	<script>
+		let startTime = 0;
+		let timerIntervalId = null;
+		let successCount = 0;
+
+		function startTimer() {
+			startTime = Date.now();
+			timerIntervalId = setInterval(updateTimer, 10);
+		}
+
+		function stopTimer() {
+			clearInterval(timerIntervalId);
+			const elapsedTime = Date.now() - startTime;
+			if (elapsedTime >= 4700 && elapsedTime <= 5300) {
+				successCount++;
+				document.getElementById("success").textContent = successCount + "回成功しました！";
+			} else {
+				document.getElementById("loser").style.display = "block";
+				setTimeout(reset, 2000);
+			}
+		}
+
+		function updateTimer() {
+			const elapsedTime = Date.now() - startTime;
+			const seconds = Math.floor(elapsedTime / 1000);
+			const milliseconds = String(elapsedTime % 1000).padStart(3, "0");
+			document.getElementById("timer").textContent = seconds + "." + milliseconds;
+		}
+
+		function reset() {
+			startTime = 0;
+			successCount = 0;
+			document.getElementById("timer").textContent = "0.000";
+			document.getElementById("success").textContent = "0回成功しました！";
+			document.getElementById("loser").style.display = "none";
+		}
+
+		document.addEventListener("keydown", function(event) {
+			if (event.key === " ") {
+				if (startTime === 0) {
+					startTimer();
+				} else {
+					stopTimer();
+				}
+			}
+		});
+	</script>
+</body>
+</html>
