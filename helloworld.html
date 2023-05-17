@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Helloworld</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+<body>
+    <py-script>
+        import bottle
+
+        @bottle.route('/')
+        def index():
+            return "Hello, World!"
+
+        bottle.run(host='0.0.0.0', port=8080, debug=True)
+    </py-script>
+</body>
+</html>

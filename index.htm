@@ -1,6 +1,9 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
-<HTML>
+<!DOCTYPE html>
+<html lang="ja">
 <HEAD>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JY77RQL0H4"></script>
 <script>
@@ -13,12 +16,121 @@
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=UTF-8">
 <TITLE>ちょすけのホームページ</TITLE>
 <link rel="shortcut icon" href="favicon.ico">
+    <script src="jquery-3.6.4.min.js"></script>
+    <style>
+ 	.nav_toggle {
+			cursor: pointer;
+			display: inline-block;
+			padding: 10px;
+			position: absolute;
+			right: 0;
+			top:5px;
+		}
+
+		.nav_toggle i {
+			background-color: #333;
+			display: block;
+			height: 3px;
+			margin-bottom: 3px;
+			width: 25px;
+		}
+
+		.nav {
+			display: none;
+			list-style: none;
+			padding: 0;
+			position: absolute;
+			right: 10px;
+			top: 50px;
+			z-index: 100;
+		}
+
+		.show {
+			display: block !important;
+		}
+
+		.nav_menu_ul {
+			background-color: #fff;
+			border: 1px solid #ddd;
+			padding: 10px;
+		}
+
+		.nav_menu_li {
+			margin-bottom: 10px;
+		}
+
+		.nav_menu_li a {
+			color: #333;
+			text-decoration: none;
+		}
+
+		.nav_menu_li a:hover {
+			text-decoration: underline;
+		}
+    </style>
 </HEAD>
 <BODY BACKGROUND="b004.gif" BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#800080" ALINK="#800080">
+
 <BASEFONT SIZE=3>
-<H1>ちょすけのホームページへようこそ<BR>
-<IMG SRC="girl13.png" WIDTH=1200 HEIGHT=1400 ALT="girl13.png"><BR>ようこそいらっしゃいました。まだまだ工事中ですが、ゆっくりして行ってください。<BR><A HREF="programming.html">プログラミング</A><BR><A HREF="game.htm">ゲーム作品</A><BR><A HREF="web.htm">WEB作品</A><BR><A HREF="manga.htm">僕の漫画</A><BR><A HREF="https://mypage.syosetu.com/560915/">僕の小説</A><BR><A HREF="e.htm">僕の絵</A><BR><A HREF="profile.htm">僕のプロフィール</A><BR><A HREF="link.htm">リンク集</A><BR><A HREF="Twitter.html">Twitter</a></A><BR><A HREF="AI.html">AI</a><BR><A HREF="VR.html">VR</a>
- </a></H1>
+<H1>ちょすけのホームページへようこそ</H1>
+<span class="nav_toggle">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+      <nav class="nav">
+        <ul class="nav_menu_ul">
+          <li class="nav_menu_li"><a href="http://tyosuke20xx.com/programming.html">プログラミング</a></li>
+          <li class="nav_menu_li"><a href="http://tyosuke20xx.com/game.htm">ゲーム作品</a></li>
+          <li class="nav_menu_li"><a href=
+          "http://tyosuke20xx.com/gamedev.html">ゲーム開発</a></li>
+          <li class="nav_menu_li"><a href=
+          "http://tyosuke20xx.com/webdev.html">WEB制作</a></li>
+          <li class="nav_menu_li"><a href="http://tyosuke20xx.com/web.htm">WEB作品</a></li>
+          <li class="nav_menu_li"><a href="http://tyosuke20xx.com/manga.htm">僕の漫画</a></li>
+          <li class="nav_menu_li"><a href="https://mypage.syosetu.com/560915/">僕の小説</a></li>
+          <li class="nav_menu_li"><a href="https://tyosuke.hatenablog.com/">俺的ゲーム速報ちょすけ</a></li>
+          <li class="nav_menu_li"><a href="http://www.tyosuke20xx.com/blog/">ブログ</a></li>
+          <li class="nav_menu_li"><a href="https://chosukenews.blogspot.com/">ちょすけのニュースブログ</a></li>
+          <li class="nav_menu_li"><a href="http://tyosuke20xx.com/e.htm">僕の絵</a></li>
+        　<li class="nav_menu_li"><a href="http://tyosuke20xx.com/profile.htm">僕のプロフィール</a></li>
+        　<li class="nav_menu_li"><a href="http://tyosuke20xx.com/link.htm">リンク集</a></li>
+        　<li class="nav_menu_li"><a href="http://tyosuke20xx.com/Twitter.html">Twitter</a></li>
+        　<li class="nav_menu_li"><a href="http://tyosuke20xx.com/AI.html">AI</a></li>
+        　<li class="nav_menu_li"><a href="http://tyosuke20xx.com/VR.html">VR</a></li>
+        　<li class="nav_menu_li"><a href="https://www.youtube.com/channel/UC4HQDfdsqq-if9gjSkTqX2Q">YouTube</a></li>
+        </ul>
+      </nav>
+      <script>
+      $('.nav_toggle').on('click', function () {
+        $('.nav_toggle, .nav').toggleClass('show');
+      });
+      </script>
+      <BR>
+<IMG SRC="girl16.png" WIDTH=750 HEIGHT=1200 ALT="girl16.png"><BR>ようこそいらっしゃいました。まだまだ工事中ですが、ゆっくりして行ってください。<BR><A HREF="programming.html">プログラミング</A><BR><A HREF="game.htm">ゲーム作品</A><BR><a href="gamedev.html">ゲーム開発</A><BR><A HREF="web.htm">WEB作品</A><BR><a href="webdev.html">WEB制作</a></BR><A HREF="manga.htm">僕の漫画</A><BR><A HREF="https://mypage.syosetu.com/560915/">僕の小説</A><BR><A HREF="https://tyosuke.hatenablog.com/">俺的ゲーム速報ちょすけ</A><BR><A HREF="http://www.tyosuke20xx.com/blog/">ブログ</A><BR><A HREF="https://chosukenews.blogspot.com/">ちょすけのニュースブログ</A><BR><A HREF="e.htm">僕の絵</A><BR><A HREF="profile.htm">僕のプロフィール</A><BR><A HREF="link.htm">リンク集</A><BR><A HREF="Twitter.html">Twitter</a></A><BR><A HREF="AI.html">AI</a><BR><A HREF="VR.html">VR</a><BR><A HREF="https://www.youtube.com/channel/UC4HQDfdsqq-if9gjSkTqX2Q">Youtube</a>
+<!-- Begin Yahoo Search Form -->
+<div style="margin:0;padding:0;font-size:14pt;border:none;background-color:#FFF;"><form action="https://search.yahoo.co.jp/search" method="get" target="_blank" style="margin:0;padding:0;"><p style="margin:0;padding:0;"><a href="https://www.yahoo.co.jp/" target="_blank"><img src="https://s.yimg.jp/images/search/guide/searchbox/080318/ysearch_logo_85_22.gif" alt="Yahoo! JAPAN" style="border:none;vertical-align:middle;padding:0;border:0;" width="85" height="22"></a><input type="text" name="p" size="28" style="margin:0 3px;width:50%;"><input type="hidden" name="fr" value="ysiw"><input type="hidden" name="ei" value="▲▲▲"><input type="submit" value="検索" style="margin:0;"></p><ul style="margin:2px 0 0 0;padding:0;font-size:10pt;list-style:none;"><li style="display:inline;"><input name="vs" type="radio" value="" checked="checked">ウェブ全体を検索</li><li style="display:inline;"><input name="vs" type="radio" value="●●●">このサイト内を検索</li></ul></form><img src="https://custom.search.yahoo.co.jp/images/window/006c75a92ba244c6b4cbe2709aa17d7b.gif" width="1" height="1" style="display:block;position:absolute"></div>
+<!-- End Yahoo! Search Form -->
+<!-- Site search from Bing-->
+<form method="get" action="http://www.Bing.com/search">
+<input type="hidden" name="cp" value="自分のサイトで使用しているコード ページ" />
+<input type="hidden" name="FORM" value="FREESS" />
+<table bgcolor="#FFFFFF">
+<tr>
+<td>
+<a href="http://www.Bing.com/">
+<img src="http://www.Bing.com/siteowner/s/siteowner/Logo_51x19_Dark.png" border="0" ALT="Bing" />
+</a>
+</td>
+<td>
+<input type="text" name="q" size="30" />
+<input type="submit" value="サイト" />
+<input type="hidden" name="q1" value="site:自分のドメイン名" />
+</td>
+</tr>
+</table>
+</form>
+<!-- Site Search from Bing -->
   <div>
 <script async src="https://cse.google.com/cse.js?cx=b7215ff1827404566">
 </script>
@@ -26,7 +138,10 @@
   </div>
         <gcse:searchbox-only></gcse:searchbox-only>
 <div class="mamewaza_blog"><div><div class="mamewaza_blog_exp"><span class="mamewaza_assembled">powered by <a href="http://mamewaza.com/tools/" target="_blank" rel="nofollow">まめわざ</a></span></div></div></div><script type="text/javascript" src="https://mamewaza.net/blog.js?200311"></script><script type="text/javascript">mamewaza_blog({selector:"#mamewaza_blog",feed:"https://chosukenews.blogspot.com/feeds/posts/default",rpp:"5",height:"auto",exp:true,url:true,date:"1",style:"div.mamewaza_blog > div{background-color:transparent;}div.mamewaza_blog ul.mamewaza_blog{background-color:transparent;}div.mamewaza_blog h5.mamewaza_blog,div.mamewaza_blog li,div.mamewaza_blog div.mamewaza_blog_exp{padding:10px;}div.mamewaza_blog > div{padding:0px;border:1px solid #eeeeee;font-size:12px;}div.mamewaza_blog h5.mamewaza_blog,div.mamewaza_blog ul.mamewaza_blog,div.mamewaza_blog li{border-bottom:1px solid #eeeeee;}div.mamewaza_blog h5.mamewaza_blog a,div.mamewaza_blog a.mamewaza_blog_title{color:#000;font-size:14px;text-shadow:none;}div.mamewaza_blog a.mamewaza_blog_title{font-weight:normal;}div.mamewaza_blog,div.mamewaza_blog a{color:#999999;}div.mamewaza_blog a.mamewaza_blog_url{color:#999999;}"})</script> 
-<div class="mamewaza_blog"><div><div class="mamewaza_blog_exp"><span class="mamewaza_assembled">powered by <a href="http://mamewaza.com/tools/" target="_blank" rel="nofollow">まめわざ</a></span></div></div></div><script type="text/javascript" src="https://mamewaza.net/blog.js?200311"></script><script type="text/javascript">mamewaza_blog({selector:"#mamewaza_blog",feed:"http://2ch-ranking.net/mt50k.rdf",rpp:"5",height:"auto",exp:true,url:true,date:"1",style:"div.mamewaza_blog > div{background-color:transparent;}div.mamewaza_blog ul.mamewaza_blog{background-color:transparent;}div.mamewaza_blog h5.mamewaza_blog,div.mamewaza_blog li,div.mamewaza_blog div.mamewaza_blog_exp{padding:10px;}div.mamewaza_blog > div{padding:0px;border:1px solid #eeeeee;font-size:12px;}div.mamewaza_blog h5.mamewaza_blog,div.mamewaza_blog ul.mamewaza_blog,div.mamewaza_blog li{border-bottom:1px solid #eeeeee;}div.mamewaza_blog h5.mamewaza_blog a,div.mamewaza_blog a.mamewaza_blog_title{color:#000;font-size:14px;text-shadow:none;}div.mamewaza_blog a.mamewaza_blog_title{font-weight:normal;}div.mamewaza_blog,div.mamewaza_blog a{color:#999999;}div.mamewaza_blog a.mamewaza_blog_url{color:#999999;}"})</script>
-</form>
+
+<address>
+ お問い合わせは <a href="mailto:tyosuke2010@gmail.com">tyosuke2010@gmail.com</a> まで
+</address>
+Copyright © 2023 chosuke Homepage. All Right Reserved.
 </BODY>
 </HTML>
