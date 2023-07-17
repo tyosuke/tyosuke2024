@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+  <meta http-equiv="Content-Style-Type" content="text/css" >
+  <style type="text/css">
+  <!--
+    body{background-color:#fed;color:#348;margin:1em 5%;}
+    p{margin:0em;padding:0.25em 0.5em;}
+    img{border:outset #fed 2px;float:left;margin:0em 1em 0.5em 0em;}
+    hr{clear:both;}
+  -->
+  </style>
+  <title>画像掲示板</title>
+</head>
+<body>
+<form action="bbs.cgi" method="POST" enctype="multipart/form-data">
+<textarea            name="messe" cols="72" rows="6">何か書いてください</textarea>
+<br>画像ファイル：
+<input type="file"   name="tenpu" value="" size="36">
+<input type="submit" name="btn"   value="送信">
+</form>
+</body>
+</html>

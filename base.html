@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>アンカー要素</title>
+ <meta name="description" content="ディスクリプションを入力">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <!-- [if lt IE 9] -->
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+ <!-- [endif] -->
+ <script src="main.js"></script>
+ </head>
+ <body>
+ <!----- header----->
+ <header>ヘッダー</header>
+ <nav>ナビ</nav>
+ <!----- /header ----->
+ 
+ <!----- main ----->
+ <h1>baseタグ</h1>
+ <section>
+ <h2>グローバル属性</h2>
+ &lt;a href=""&gt;
+ 「base」タグはHTMLの要素の一つで、ドキュメント内の相対URLのベースとなるURLや、リンクのデフォルトのターゲットを指定するために使用されます。
+
+「base」タグは以下の属性を持つことができます：
+
+href属性: ドキュメント内の相対URLのベースとなるURLを指定します。絶対URLや相対URLのどちらも指定できます。
+target属性: &lt;a&gt;、&lt;area&gt;、&lt;form&gt; 要素の明示的なターゲット属性が指定されていない場合に、デフォルトのブラウジングコンテキストを示すキーワードや作者定義の名前を指定します。特定のキーワードには以下の特別な意味があります：
+_self (デフォルト): 現在のブラウジングコンテキストで結果を表示します。
+_blank: 新しい無名のブラウジングコンテキストで結果を表示します。
+_parent: 現在のページがフレーム内にある場合、親のブラウジングコンテキストで結果を表示します。親が存在しない場合は_selfと同じ動作をします。
+_top: 最上位のブラウジングコンテキスト（現在のコンテキストの祖先であり、親を持たないコンテキスト）で結果を表示します。親が存在しない場合は_selfと同じ動作をします。
+「base」タグの使用例として、以下のように記述することができます：
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="Poxqoeb" data-user="tyosuke" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/tyosuke/pen/Poxqoeb">
+  Untitled</a> by ちょすけ (<a href="https://codepen.io/tyosuke">@tyosuke</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+ </section>
+ </article>
+ <!----- /main ----->
+ 
+ <!----- footer ----->
+ <footer>フッター</footer>
+ <!----- /footer ----->
+ </body>
+</html>
+<BR><A HREF="HTML.html"><IMG SRC="pre.jpeg" WIDTH=256 HEIGHT=256 ALT="pre.jpeg"></A>

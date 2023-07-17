@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>アンカー要素</title>
+ <meta name="description" content="ディスクリプションを入力">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <!-- [if lt IE 9] -->
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+ <!-- [endif] -->
+ <script src="main.js"></script>
+ </head>
+ <body>
+ <!----- header----->
+ <header>ヘッダー</header>
+ <nav>ナビ</nav>
+ <!----- /header ----->
+ 
+ <!----- main ----->
+ <h1>baseタグ</h1>
+ <section>
+ <h2>グローバル属性</h2>
+<bdi>は、HTMLの要素の一つです。この要素は、ブラウザの双方向アルゴリズムに対して、それが含まれるテキストを周囲のテキストと切り離して扱うよう指示します。特に、ウェブサイトがテキストを動的に挿入し、挿入されるテキストの方向性がわからない場合に役立ちます[1]。
+
+双方向テキストとは、左から右に配置される文字の連続と、右から左に配置される文字の連続が含まれるテキストのことを指します。例えば、英語の文字列に埋め込まれたアラビア語の引用符のようなものです。ブラウザはUnicodeの双方向アルゴリズムを使用して、これを処理します。このアルゴリズムでは、文字には暗黙の方向性が与えられます。例えば、ラテン文字はLTR（左から右）として扱われ、アラビア文字はRTL（右から左）として扱われます。その他の一部の文字（スペースや一部の句読点など）は中立的とされ、周囲の文字に基づいて方向性が割り当てられます。
+
+通常、双方向アルゴリズムは特別なマークアップを提供する必要なく、適切な処理を行いますが、時にはアルゴリズムが支援が必要となります。そこで<bdi>要素が役立ちます。
+
+<bdi>要素は、テキストを囲んで双方向アルゴリズムに対して、このテキストを周囲のテキストとは独立して扱うよう指示するために使用されます。以下の2つの方法で機能します:
+
+<bdi>に埋め込まれたテキストの方向性は、周囲のテキストの方向性に影響を与えません。
+<bdi>に埋め込まれたテキストの方向性は、周囲のテキストの方向性に影響を受けません。
+例えば、次のようなテキストを考えてみましょう:
+EMBEDDED-TEXT - 1st place
+EMBEDDED-TEXTがLTR（左から右）の場合、これは正常に機能します。しかし、EMBEDDED-TEXTがRTL（右から左）の場合、- 1はRTLのテキストとして扱われます（中立的で弱い文字で構成されているため）。結果は乱れた表示になります:
+1 - EMBEDDED-TEXTst place
+EMBEDDED-TEXTの方向性が事前にわかる場合は、EMBEDDED-TEXTをdir属性が既知の方向性に設定された<span>で囲むことでこの問題を修正できます。しかし、EMBEDDED-TEXTの方向性がわからない場合（例えば、データベースから読み込まれるか、ユーザーによって入力されるかなど）、EMBEDDED-TEXTの方向性が周囲のテキストに影響を与えないように<bdi>を使用する必要があります。
+
+同じ視覚効果は<span dir="auto">を使用することでも実現できますが、その意味論はより明確ではありません。[1]
+
+以上が<bdi>要素の説明です。この要素を使用することで、テキストの方向性に関する問題を解決することができます。
+
+【参照】
+
+[1] Mozilla Developer Network: <bdi>: The Bidirectional Isolate element - HTML: HyperText Markup Language | MDN. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi
+ <!----- /main ----->
+ 
+ <!----- footer ----->
+ <footer>フッター</footer>
+ <!----- /footer ----->
+ </body>
+</html>
+<BR><A HREF="HTML.html"><IMG SRC="pre.jpeg" WIDTH=256 HEIGHT=256 ALT="pre.jpeg"></A>
