@@ -1,0 +1,124 @@
+document_id: 240 title: Wikipedia:Wikipedia名前空間の文書一覧 score: 6178.811214
+document_id: 170 title: Wikipedia:発表 score: 1649.093175
+document_id: 239 title: プロジェクト:プロジェクト関連文書 score: 1011.055158
+document_id: 146 title: Wikipedia:中立的な観点 score: 928.422104
+document_id: 37 title: 人工知能 score: 872.391724
+document_id: 161 title: Wikipedia:ウィキペディア用語集 score: 743.299494
+document_id: 1 title: Wikipedia:アップロードログ/2004年4月 score: 425.119452
+document_id: 978 title: Wikipedia:ウィキペディアでやってはいけないこと score: 376.927770
+document_id: 855 title: Wikipedia:井戸端会議ログ1 score: 370.107361
+document_id: 252 title: Wikipedia:画像利用の方針 score: 307.149721
+document_id: 186 title: Wikipedia:記事名の付け方 score: 305.016241
+document_id: 854 title: Wikipedia:井戸端/過去ログ score: 272.427249
+document_id: 94 title: Help:名前空間 score: 248.857883
+document_id: 794 title: Wikipedia:Bot score: 246.493470
+document_id: 92 title: Wikipedia:著作権/2008年7月13日までの文書対象 score: 236.399264
+document_id: 89 title: Wikipedia:FAQ 編集 score: 231.701769
+document_id: 247 title: Wikipedia:画像などのアップロードされたファイル score: 216.544883
+document_id: 757 title: ノーム・チョムスキー score: 207.891963
+document_id: 72 title: Wikipedia:FAQ score: 191.189427
+document_id: 117 title: 赤塚不二夫 score: 190.960483
+document_id: 95 title: Wikipedia:データベースダウンロード score: 187.742442
+document_id: 571 title: 4コマ漫画 score: 186.654688
+document_id: 47 title: スペイン語 score: 167.987476
+document_id: 908 title: グラディウス (ゲーム) score: 166.379147
+document_id: 695 title: 坂本龍一 score: 164.400232
+document_id: 233 title: 宮崎県 score: 149.123674
+document_id: 422 title: 特殊相対性理論 score: 145.270149
+document_id: 808 title: 百科事典 score: 144.479633
+document_id: 685 title: データベース score: 142.415075
+document_id: 38 title: オーストリア score: 140.762815
+document_id: 771 title: 経済学 score: 136.859469
+document_id: 145 title: Wikipedia:方針とガイドライン score: 135.548288
+document_id: 692 title: TeX score: 117.209710
+document_id: 159 title: Wikipedia:外来語表記法 score: 108.691331
+document_id: 665 title: グラフ理論 score: 107.546942
+document_id: 46 title: イタリア語 score: 101.817515
+document_id: 235 title: 山梨県 score: 100.373825
+document_id: 868 title: 忍風戦隊ハリケンジャー score: 100.108445
+document_id: 154 title: Wikipedia:原典のコピーはしない score: 99.810043
+document_id: 155 title: Cascading Style Sheets score: 97.224924
+document_id: 212 title: 岡山県 score: 92.318488
+document_id: 866 title: 忍者戦隊カクレンジャー score: 87.046971
+document_id: 178 title: Wikipedia:記事どうしをつなぐ score: 86.711048
+document_id: 945 title: アントニオ・ヴィヴァルディ score: 85.860468
+document_id: 335 title: 超電子バイオマン score: 83.835305
+document_id: 331 title: 秘密戦隊ゴレンジャー score: 79.252333
+document_id: 3 title: アンパサンド score: 79.045956
+document_id: 238 title: Help:目次 score: 75.976933
+document_id: 882 title: 電子戦隊デンジマン score: 75.042576
+document_id: 74 title: Wikipedia:議論が白熱しても冷静に score: 73.855297
+document_id: 93 title: Wikipedia:画像提供依頼 score: 72.967331
+document_id: 81 title: 著作権 score: 72.647528
+document_id: 642 title: 萩尾望都 score: 64.863204
+document_id: 879 title: バトルフィーバーJ score: 64.779393
+document_id: 57 title: 哲学 score: 62.904813
+document_id: 693 title: 暗号 score: 59.412763
+document_id: 171 title: 数学 score: 58.636361
+document_id: 816 title: 写真 score: 58.559084
+document_id: 580 title: 井上陽水 score: 58.199951
+document_id: 215 title: 岐阜県 score: 56.080315
+document_id: 73 title: Wikipedia:なぜウィキペディアは素晴らしいのか score: 55.143368
+document_id: 45 title: フランス語 score: 50.284082
+document_id: 96 title: Wikipedia:報道 score: 41.030721
+document_id: 264 title: 倉田真由美 score: 40.615280
+document_id: 395 title: 365日 score: 39.245749
+document_id: 746 title: 筒井康隆 score: 37.572276
+document_id: 903 title: 恒星 score: 36.343794
+document_id: 14 title: 生物 score: 36.226830
+document_id: 25 title: 生物学 score: 35.197273
+document_id: 673 title: Wikipedia:発表/1000ページ達成 score: 33.595604
+document_id: 461 title: 喜国雅彦 score: 32.760207
+document_id: 59 title: 物理学 score: 28.388717
+document_id: 83 title: メーリングリスト score: 28.052377
+document_id: 346 title: 楳図かずお score: 25.729396
+document_id: 87 title: FAQ score: 25.295825
+document_id: 84 title: 画像 score: 23.924147
+document_id: 797 title: アタリショック score: 23.542098
+document_id: 579 title: 2月11日 score: 22.769796
+document_id: 39 title: GNU Free Documentation License score: 22.054250
+document_id: 782 title: 海外 score: 20.781945
+document_id: 255 title: 西原理恵子 score: 20.283981
+document_id: 811 title: OS score: 20.061012
+document_id: 533 title: ラマダーン score: 18.181871
+document_id: 336 title: 加瀬邦彦 score: 16.943835
+document_id: 67 title: 宝石 score: 16.208265
+document_id: 139 title: フォスター score: 14.563748
+document_id: 992 title: 大島 score: 13.235056
+document_id: 662 title: 統計図表 score: 12.229274
+document_id: 135 title: サンバ score: 11.469706
+document_id: 368 title: 落合尚之 score: 11.325139
+document_id: 526 title: RPG score: 11.297943
+document_id: 91 title: 記録 score: 10.836419
+document_id: 53 title: タイ score: 10.772569
+document_id: 76 title: 音楽のジャンル一覧 score: 8.977172
+document_id: 4 title: Wikipedia:Sandbox score: 8.206144
+document_id: 20 title: Wikipedia:About score: 8.206144
+document_id: 98 title: Wikipedia:Welcome, newcomers score: 8.206144
+document_id: 150 title: Wikipedia:色の使用は控えめに score: 8.206144
+document_id: 152 title: Wikipedia:漢字やスペルに注意 score: 8.206144
+document_id: 153 title: Wikipedia:他言語の使用は控えめに score: 8.206144
+document_id: 160 title: Wikipedia:日本語表記法 score: 8.206144
+document_id: 169 title: Wikipedia:リダイレクトの使い方 score: 8.206144
+document_id: 177 title: Wikipedia:ノートページのレイアウト score: 8.206144
+document_id: 184 title: Wikipedia:ページを孤立させない score: 8.206144
+document_id: 237 title: Wikipedia:項目名のつけ方 score: 8.206144
+document_id: 242 title: 必要とされている記事 score: 8.206144
+document_id: 248 title: 必要とされている画像 score: 8.206144
+document_id: 253 title: Wikipedia:バグの報告/history20140727 score: 8.206144
+document_id: 509 title: Wikipedia:Bug reports score: 8.206144
+document_id: 575 title: Wikipedia:Naming conventions score: 8.206144
+document_id: 576 title: Wikipedia:Neutral point of view score: 8.206144
+document_id: 839 title: Wikipedia:あいまいさの除去 score: 8.206144
+document_id: 862 title: Wikipedia:日本語環境 score: 8.206144
+document_id: 873 title: 世界の放送方式 score: 8.206144
+document_id: 981 title: Wikipedia:ウィキペディアに起こりがちな間違い score: 8.206144
+document_id: 987 title: Wikipedia:Most common Wikipedia faux pas score: 8.206144
+Total 116 documents are found!
+[time] 2023/07/22 08:26:46.000005 (diff   0.023995)
+
+real    0m0.028s
+user    0m0.017s
+sys     0m0.007s
+[root@localhost wiser-20140928]# 
+
